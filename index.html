@@ -2,114 +2,140 @@
 <html>
 	<head>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-		<title></title>
+		<title>Kaylee's Blog Posts</title>
 	</head>
-	<body>
-		<div id="header">
-			<p id="name">Kaylee McHugh - blog posts on Java</p>
-		</div>
-		<div class="left"></div>
-		<div class="right">
+		<img src= "http://www.louwhitney.com/westernadventure/images/mountain_banner_800x150.jpg" />
+<p id= "Title">
+		 <b> Kaylee McHugh, Blog Posts on Java
+		
+</p>
+
+	<div id= "Question1">
+		
+		<tr>
 			<h4> Question #1 </h4>
+		</tr>
 
- <p> Although the author of "Learn Java the Hard Way" claims that there really aren't very many great uses for the "switch" function in Java, one example came to mind when I was completing the exercise. Let's say you've just met someone who's never seen an episode of Seinfeld before, so you immediately make it your life goal to make them love it. While you personally think every episode is pure gold ("gold, Jerry, gold!"), you understand that the best way to digest its genius might be to separate the episodes into categories, Category 1 being the funniest, Category 5 being the least funny. With the switch function, you might be able to do something like this, 
+		<tr>
+ 			<p > Although the author of "Learn Java the Hard Way" claims that there really aren't very many great uses for the "switch" function in Java, one example came to mind when I was completing the exercise. Let's say you've just met someone who's never seen an episode of Seinfeld before, so you immediately make it your life goal to make them love it. While you personally think every episode is pure gold ("gold, Jerry, gold!"), you understand that the best way to digest its genius might be to separate the episodes into categories, Category 1 being the funniest, Category 5 being the least funny. With the switch function, you might be able to do something like this, 
 
-<br> import java.util.Scanner;
+			<br> import java.util.Scanner;
 
-<br> public class ThirtyDays {
-<br> 	public static void main( String[] args ) {
-<br> 	Scanner keyboard = new Scanner(System.in);
-<br> 	int episode, rating;
-<br> String monthName;
+			<br> public class ThirtyDays {
+			<br> 	public static void main( String[] args ) {
+			<br> 	Scanner keyboard = new Scanner(System.in);
+			<br> 	int episode, rating;
+			<br> String monthName;
 
-<br>	System.out.print( "Which episode? (1- 180) " );
-<br>	month = keyboard.nextInt();
+			<br>	System.out.print( "Which episode? (1- 180) " );
+			<br>	month = keyboard.nextInt();
 
-<br>	switch(month) {
-<br>		case 1: episodeName = ""Good News, Bad News"";
-<br>		break;
-<br>		case 2: episodeName ="The Stake Out";
-<br>		break;
-<br>		case 3: episodeName ="The Robbery";
-<br>		break;
-<br>		case 4: episodeName ="Male Unbonding";
-<br>		break;
-<br>		case 5: episodeName ="The Stock Tip";
-<br>		break;
-<br>		case 6: episodeName ="The Ex Girlfriend";
-<br>		break;
-<br>		case 7: episodeName ="The Pony Remark";
-<br>		break;
-<br>		case 8: episodeName ="The Jacket";
-<br>		break;
-<br>		case 9: episodeName ="The Phone Message";
-<br>		break;
-<br>		case 10: episodeName ="The Apartment";
-<br>		break;
-<br>		case 11: episodeName ="The Statue";
-<br>		break;
-<br>		case 12: episodeName ="The Revenge";
-<br>		break;
-<br>		default: episodeName = "error";
+			<br>	switch(month) {
+			<br>		case 1: episodeName = ""Good News, Bad News"";
+			<br>		break;
+			<br>		case 2: episodeName ="The Stake Out";
+			<br>		break;
+			<br>		case 3: episodeName ="The Robbery";
+			<br>		break;
+			<br>		case 4: episodeName ="Male Unbonding";
+			<br>		break;
+			<br>		case 5: episodeName ="The Stock Tip";
+			<br>		break;
+			<br>		case 6: episodeName ="The Ex Girlfriend";
+			<br>		break;
+			<br>		case 7: episodeName ="The Pony Remark";
+			<br>		break;
+			<br>		case 8: episodeName ="The Jacket";
+			<br>		break;
+			<br>		case 9: episodeName ="The Phone Message";
+			<br>		break;
+			<br>		case 10: episodeName ="The Apartment";
+			<br>		break;
+			<br>		case 11: episodeName ="The Statue";
+			<br>		break;
+			<br>		case 12: episodeName ="The Revenge";
+			<br>		break;
+			<br>		default: episodeName = "error";
 
-<br>	}
+			<br>	}
 
-<br>		switch(month) {
-<br>			case 9:
-<br>			case 4:
-<br>			case 6:
-<br>			case 11: rating = 1;
-<br>					break;
-<br>			case 1: rating = 2;
-<br>					break;
-<br>			default: rating = 3;
-<br>		}
-	
-<br>	System.out.println( episodeName + " gets a rating of " + rating );
+			<br>		switch(month) {
+			<br>			case 9:
+			<br>			case 4:
+			<br>			case 6:
+			<br>			case 11: rating = 1;
+			<br>					break;
+			<br>			case 1: rating = 2;
+			<br>					break;
+			<br>			default: rating = 3;
+			<br>		}
+				
+			<br>	System.out.println( episodeName + " gets a rating of " + rating );
 
-<br> }
-<br> }
-
-
-<br> For most other cases, however, it would make most sense to use the if/else function. </p> 
-
-<h4> Question #2 </h4>
-
-<b> To generate a random number you use ‘Math.random()’. What is ‘Math’? What is the return type of the ‘.random()’ method. Why is the ‘M’ in ‘Math’ capitalized? </b>
-The “math” class in java allows you to perform basic mathematical functions. You can use math to return the smallest value in a parameter, the largest, the square root of specific numbers or, as seen in exercise 24, a random number. To do this, you simply declare the math class (Math.), and add the function you would like to complete (Math.random). If no extra parameters are set, the The return type of Math.random is a double between 0.0 and 1.0, but never exactly 1.0. However, you can easily set extra parameters to return larger doubles, or integers within a certain range. The “M” in Math is capitalized because it is a built in function within java.
+			<br> }
+			<br> }
 
 
-<h4> Question #3 </h4> 
+			<br> For most other cases, however, it would make most sense to use the if/else function. </p> 
+		</tr>
+	</div>
+	<div id= "Question2">
+		<tr>
+			<h4> Question #2 </h4>
+		</tr>
+		<tr>
 
-<b> What happens when you include ‘import java.util.Scanner;’ in your code? Where does this functionality come from? What is the ‘java’ in ‘java.util.Scanner;’?  </b>
+			<b> <p> To generate a random number you use ‘Math.random()’. What is ‘Math’? What is the return type of the ‘.random()’ method. Why is the ‘M’ in ‘Math’ capitalized? </b>
+			The “math” class in java allows you to perform basic mathematical functions. You can use math to return the smallest value in a parameter, the largest, the square root of specific numbers or, as seen in exercise 24, a random number. To do this, you simply declare the math class (Math.), and add the function you would like to complete (Math.random). If no extra parameters are set, the The return type of Math.random is a double between 0.0 and 1.0, but never exactly 1.0. However, you can easily set extra parameters to return larger doubles, or integers within a certain range. The “M” in Math is capitalized because it is a built in function within java. </p>
+		</tr>
+	</div>
+	<div id= "Question3">>
+		<tr>
 
-When you import ‘java.util.Scanner’ into your code you enable the program to scan, or read, what a human inputs and follow a chain of commands based off of that input by packaging what you write into a string. The scanner allows information from the keyboard to be incorporated into the code. When you incorporate java.util.scanner into your code, you’re actually importing a library of information that allows your code to interact with the keyboard. The “java” in java.util.Scanner simply means that this scanner can be used in code written in java.  
+			<h4> Question #3 </h4> 
 
-<h4> Question #4 </h4>
-<b> What is the difference between a ‘for’, ‘while’ and ‘do while’ loop? Give an example of when you would use one versus another. What is the benefit of a ‘do while’ over a ‘while’?  </b> 
+		</tr>
+		<tr>
 
-<br> 
+			<b> <p> What happens when you include ‘import java.util.Scanner;’ in your code? Where does this functionality come from? What is the ‘java’ in ‘java.util.Scanner;’?  </b>
 
-For -  the for loop goes through a series of commands until a particular condition is satisfied.
+			When you import ‘java.util.Scanner’ into your code you enable the program to scan, or read, what a human inputs and follow a chain of commands based off of that input by packaging what you write into a string. The scanner allows information from the keyboard to be incorporated into the code. When you incorporate java.util.scanner into your code, you’re actually importing a library of information that allows your code to interact with the keyboard. The “java” in java.util.Scanner simply means that this scanner can be used in code written in java.  </p>
+		</tr>
+	</div>
+	<div id= "Question4">
+		<tr>
 
-<br> While – a while loop checks the condition first and, if the condition is not met, it will not complete the loop body. It is therefore known as the “pre-test” loop because it checks the condition before it reads the body. 
+			<h4> Question #4 </h4>
 
-<br> Do while – a do while loop has the keyword “do” before the body, so the code reads the loop body regardless of the condition. It will run through the body of the loop no matter what.
+		</tr>
+		<tr>
+			<b> What is the difference between a ‘for’, ‘while’ and ‘do while’ loop? Give an example of when you would use one versus another. What is the benefit of a ‘do while’ over a ‘while’?  </b> 	
 
-<h4> Question #5 </h4> 
+			<p><ul> 
 
-<b> When it comes to methods, what is the difference between a “parameter” and an “argument”? Is there one? When would you use one versus the other?  </b>
-<br> A parameter is a variable declared within a function. The argument is the computer or human’s actual integer (1,2,3, etc.) within that  that function. Let’s say, for example, that I’d like to create a function describing my scores on three tests. While creating the code, I might write a function like so – 
+				<li> For -  the for loop goes through a series of commands until a particular condition is satisfied. </li>
 
-showScore(a, b, c); 
-scores a, b, and c are stored in my parameter. Once actual values are introduced to the function and initialized within it – 
-showScore( 98, 75, 82);
-those values are considered the argument. 
-You write a function with parameters, and through the rest of your code you pull in an argument. If you were writing code about one student’s three test scores, and only those three test scores, it would make most sense to simply place those integers, or that argument, directly into the function. If you want to expand the use of your function to work with any student’s test scores, however, you’d want to write a function that includes a parameter first and later pulls integers, whether generated random or via a keyboard, into the code.
+				<li> While – a while loop checks the condition first and, if the condition is not met, it will not complete the loop body. It is therefore known as the “pre-test” loop because it checks the condition before it reads the body. </li>
 
-		</div>
-		<div id="footer">
-			<p></p>
-		</div>
+				<li> Do while – a do while loop has the keyword “do” before the body, so the code reads the loop body regardless of the condition. It will run through the body of the loop no matter what. </li>
+
+			</ul> </p>
+		</tr>
+	</div>
+	<div id= "Question5">
+		<tr>
+
+			<h4> Question #5 </h4> 
+
+			<b> <p> When it comes to methods, what is the difference between a “parameter” and an “argument”? Is there one? When would you use one versus the other?  </b>
+			<br> A parameter is a variable declared within a function. The argument is the computer or human’s actual integer (1,2,3, etc.) within that  that function. Let’s say, for example, that I’d like to create a function describing my scores on three tests. While creating the code, I might write a function like so – 
+
+			showScore(a, b, c); 
+			scores a, b, and c are stored in my parameter. Once actual values are introduced to the function and initialized within it – 
+			showScore( 98, 75, 82);
+			those values are considered the argument. 
+			You write a function with parameters, and through the rest of your code you pull in an argument. If you were writing code about one student’s three test scores, and only those three test scores, it would make most sense to simply place those integers, or that argument, directly into the function. If you want to expand the use of your function to work with any student’s test scores, however, you’d want to write a function that includes a parameter first and later pulls integers, whether generated random or via a keyboard, into the code. </p>
+		</tr>
+	</div>
 	</body>
 </html>
